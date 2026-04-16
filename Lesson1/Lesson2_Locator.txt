@@ -1,0 +1,27 @@
+- Tìm kiếm theo thuộc tính
++ TUYỆT ĐỐI:
+//input[@id='login-button']
+//input[@id='password']
++ TƯƠNG ĐỐI:
+//input[contains(@id,'login')]
+
+- Tìm kiếm theo text
++ TUYỆT ĐỐI:
+//div[text()='Sauce LabsBackpack']
+//div[text()='Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.']
++ TƯƠNG ĐỐI:
+//div[contains(text(), 'Backpack')]
+
+- Tìm kiếm theo hệ gia phả (Xpath Aces)
+
+//label[text()='Business Email:']/ancestor::div[@class='mktoFieldWrap mktoRequiredField']//descendant::input
+
+//label[text()='Company:']/ancestor::div[@class='mktoFieldWrap mktoRequiredField']//descendant::input
+
+//label[text()='Interest:']/ancestor::div[@class='mktoFieldWrap mktoRequiredField']/descendant::select/option[@value='Sauce AI Agents']
+
+//label[text()='Comments']/ancestor::div[@class='mktoFieldWrap']/descendant::textarea
+
+//label[@id='LblmktoCheckbox_47709_0']/ancestor::div[@class='mktoLogicalField mktoCheckboxList mktoHasWidth']/descendant::input
+
+//button[@class='mktoButton']
